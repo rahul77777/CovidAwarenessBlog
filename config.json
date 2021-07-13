@@ -1,0 +1,13 @@
+{
+
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/covid_awareness",
+    "prod_uri":"mysql://root:@localhost/covid_awareness",
+    "no_of_posts": 2,
+    "admin_user":"Rahul567",
+    "admin_password": "RahulRaje@77"
+  }
+
+}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	    <header class="masthead" style="background-image: url('static/images/3.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h2>COVID-19 quarantine, self-isolation and social distancing</h2>
+                            <span class="subheading">You've read about people self-quarantining, social distancing, or isolating themselves during the coronavirus disease 2019 (COVID-19) pandemic. You may be confused about the various terms and wonder what you should be doing.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Quarantine Rules</a>
+              <ul>
+                  <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Instructions for the family members of persons being home quarantined</a>
+                  <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Environmental sanitation</a>
+                  <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Duration of home quarantine</a>
+              </ul>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Social Distancing Rules</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Others</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+               <p><strong>The home quarantined person should:</strong></p>
+               <p>Stay in a well-ventilated single-room preferably with an attached/separate toilet. If another
+                family member needs to stay in the same room, it’s advisable to maintain a distance of at
+                least 1 meter between the two.</p> 
+                <ul>
+                  <li>Needs to stay away from elderly people, pregnant women, children and persons with
+                    co-morbidities within the household.</li>
+                  <li>Restrict his/her movement within the house.</li>
+                  <li>Under no circumstances attend any social/religious gathering e.g. wedding,
+                    condolences, etc.</li>
+                </ul>
+                <p><strong>He should also follow the under mentioned public health measures at all times:</strong></p>
+                <ul>
+                  <li>Wash hand as often thoroughly with soap and water or with alcohol-based hand
+                    sanitizer</li>
+                  <li>Avoid sharing household items e.g. dishes, drinking glasses, cups, eating utensils,
+                    towels, bedding, or other items with other people at home.</li>
+                  <li>Wear a surgical mask at all the time. The mask should be changed every 6-8 hours
+                    and disposedoff.Disposable masks are never to be reused.</li>
+                    <li>Masks used by patients / care givers/ close contacts during home care should be
+                    disinfected using ordinary bleach solution (5%) or sodium hypochlorite solution (1%)
+                    and then disposed of either by burning or deep burial</li>
+                  <li>Used mask should be considered as potentially infected.</li>
+                  <li>If symptoms appear (cough/fever/difficulty in breathing), he/she should immediately
+                    inform the nearest health centre or call 011-23978046.</li>
+                </ul>
+            </div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"></div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            </div>
+          </div>
+        </div>
+{% endblock %}

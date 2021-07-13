@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+	      <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/images/2.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h2>Covid-19 Awareness Blogs</h2>
+                            <span class="subheading">Manage your blogs from here.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div>
+        	<h1>Add/delete posts</h1>
+        	<a class="btn btn-primary text-uppercase" href="/edit/0">Add New Post</a>
+        	<a class="btn btn-primary text-uppercase" href="/logout">Logout</a>
+        </div>
+        <div>
+ 			<table class="table table-striped">
+			  <thead>
+			    <tr>
+			      <th scope="col">SrNo</th>
+			      <th scope="col">Title</th>
+			      <th scope="col">Postby</th>
+			      <th scope="col">Date</th>
+			      <th scope="col"></th>
+			      <th scope="col"></th>
+			      
+			    </tr>
+			  </thead>
+			  <tbody>
+			  	{% for post in posts %}
+			    <tr>
+			      <th scope="row"> {{post.srno}} </th>
+			      <td>{{post.title}}</td>
+			      <td>{{post.postby}}</td>
+			      <td>{{post.date}}</td>
+			      <th><a href="/edit/{{post.srno}}"><button class="btn btn-primary text-uppercase">Edit </button></a> </th>
+			      <th><a href="/delete/{{post.srno}}"><button class="btn btn-primary text-uppercase">Delete</button></a> </th>
+			    </tr>
+			    {% endfor %}
+			  </tbody>
+			</table>
+			
+
+        </div>
+
+{% endblock %}
